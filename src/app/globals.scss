@@ -1,4 +1,5 @@
 @import './fonts/styles.scss';
+@import './styles/mixins.scss';
 :root {
   --color-primary: #6429cd;
   --color-secondary: #330072;
@@ -9,8 +10,8 @@
   --color-disabled: #3b355b;
   --color-disabled-primary: #312A3C;
   --color-disabled-secondary: #282829;
-  --color-pressed: #FF1C44;
-  --color-pressed-red: #0000;
+  --color-rimac: #FF1C44;
+  --color-rimac-red: #0000;
   --color-days: #1d1d1b;
   --color-shadow-white-primary: #bdbdff;
   --color-shadow-white-secondary: #dbdbff;

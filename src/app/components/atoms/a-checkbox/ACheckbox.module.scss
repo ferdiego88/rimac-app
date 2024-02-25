@@ -1,9 +1,17 @@
+@import '../../../styles/mixins.scss';
+
 .checkbox-container {
     display: grid;
     grid-template-columns: 10% 90%;
     position: relative;
     align-items: center;
     cursor: pointer;
+
+    
+    @include respond-to(768px) {
+      grid-template-columns: 5% 95%;
+    }
+
   }
   
   .checkbox-container input {

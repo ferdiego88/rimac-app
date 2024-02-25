@@ -1,9 +1,14 @@
+@import '../../../styles/mixins.scss';
 .paragraph {
     font-size: 3.9vw;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
+
+    @include respond-to(768px) {
+        font-size: 2.9vw;
+      }
 }
 
 .paragraph hr {
