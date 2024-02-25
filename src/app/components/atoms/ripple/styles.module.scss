@@ -1,0 +1,20 @@
+.ripple {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+
+  > div {
+    position: absolute;
+    opacity: 0;
+
+    // Safari compatibility
+    clip-path: circle();
+    width: 2px;
+    height: 2px;
+  }
+}

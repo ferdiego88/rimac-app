@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #6429cd;
+  --color-secondary: #330072;
+  --color-background: #170339;
+  --color-white: #fff;
+  --color-pink: #dd52dd;
+  --color-disabled: #3b355b;
+  --color-disabled-primary: #312A3C;
+  --color-disabled-secondary: #282829;
+  --color-pressed: #4E1EA4;
+  --color-days: #1d1d1b;
+  --color-shadow-white-primary: #bdbdff;
+  --color-shadow-white-secondary: #dbdbff;
+  --color-error: #ed0039;
+  --color-shadow-error-primary: #b8002c;
+  --color-shadow-error-secondary: #ff527b;
+  --color-success: #00b880;
+  --color-shadow-success-primary: #006b4b;
+  --color-shadow-success-secondary: #00eca5;
+  --color-warning: #ffca10;
+  --color-shadow-warning-primary: #970;
+  --color-shadow-warning-secondary: #ffeeb3;
+  --color-information: #2298e0;
+  --color-shadow-information-primary: #20208e;
+  --color-shadow-information-secondary: #a4cae8;
+  --color-information-tickets: #dbab00;
+  --color-gray: #828285;
+  --color-disabled-button: #4D4D4F;
+  --color-state-label: #F8AF3C;
+  --color-placeholder-text: #9d9da1;
+  --color-onboarding-status: #e9dcfa;
+  --color-estudiando-status: #b383ed;
+  --color-apuesta-status: #f09eff;
+  --color-presentado-status: #bebbff;
+  --color-disponible-status: #ceecd0;
+  --color-disponible-prestamo: #e5ceec;
+  --color-disponible-asignado: #ebecce;
+  --color-home-gryffindor: #99022F;
+  --color-home-slytherin: #036453;
+  --color-home-slytherin1: #036453;
+  --color-home-slytherin2: #036453;
+  --color-home-ravenclaw: #1D476F;
+  --color-home-hufflepuff: #E79408;
+  --color-home-singrupo: #DD52DD;
+  --color-state-edit: #DFDFFF;
+}
+
+body {
+  color: var(--color-text);
+  font-size: 13px;
+  font-family: Poppins, sans-serif;
+  background: var(--color-background);
+
+  // Smooth font
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}

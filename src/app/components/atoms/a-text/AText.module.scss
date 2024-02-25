@@ -1,0 +1,35 @@
+.text {
+    font-weight: 700;
+    &__header {
+    display: inline;
+    justify-self: flex-start;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: right;
+    font-weight: 700;
+
+    }
+
+    &__banner {
+        
+        &-highlighted {
+        font-size: 0.7em;
+        line-height: 16px;
+        letter-spacing: 0.4000000059604645px;
+        text-align: left;
+        display: inline;
+        background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
+        padding: 4px;
+        border-radius: 5px;
+        }
+
+        &-principal {
+        font-size: 1.35rem;
+        text-align: left;
+        margin: 0;
+        margin-top: 10px;
+        }
+
+    }
+}

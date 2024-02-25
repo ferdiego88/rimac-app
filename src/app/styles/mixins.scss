@@ -1,0 +1,35 @@
+@mixin scrollbar {
+  overflow: auto;
+  scrollbar-color: var(--color-white) transparent;
+  scrollbar-width: thin;
+  
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+  }
+  
+  &::-webkit-scrollbar-thumb { 
+    background: var(--color-shadow-white-primary);
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--color-shadow-white-primary);
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #534E5E;
+    border-radius: 3px;
+  }
+}
+
+@mixin dynamic-height($flex-direction: row, $scroll: false) {
+  display: flex;
+  flex-direction: $flex-direction;
+  height: 100%;
+  min-height: 0;
+
+  @if $scroll {
+    @include scrollbar;
+  }
+}
