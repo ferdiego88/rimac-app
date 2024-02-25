@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaChevronDown } from 'react-icons/fa'; // Importa el ícono de flecha hacia abajo de react-icons
 import styles from './ASelect.module.scss';
 
 const ASelect = () => {

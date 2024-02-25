@@ -36,7 +36,7 @@ interface IProps {
 /**
  * Button Component
  */
-const Button = (
+const AButton = (
   {
     name,
     className,
@@ -94,4 +94,4 @@ const Button = (
   );
 };
 
-export default memo(forwardRef(Button));
+export default memo(forwardRef(AButton));
