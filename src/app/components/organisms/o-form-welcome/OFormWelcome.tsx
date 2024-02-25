@@ -23,7 +23,7 @@ const OFormWelcome = ( {
         </div>
         <ACheckbox text="Acepto la Política de Privacidad"/>
         <ACheckbox text="Acepto la Política Comunicaciones Comerciales"/>
-        <AText description="Aplican Términos y Condiciones."></AText>
+        <AText description="Aplican Términos y Condiciones." className="text__terms"></AText>
         <AButton name="quote" data-theme='primary'>Cotiza aquí</AButton>
        </form>
     );

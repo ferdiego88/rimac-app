@@ -12,9 +12,7 @@
   
     cursor: pointer;
   
-    font-size: 14px;
-    transition: background-color 0.2s, box-shadow 0.2s;
-  
+    font-size: 14px;  
     &:focus {
       box-shadow: 0 0 0 2px var(--color-secondary);
     }
@@ -183,19 +181,25 @@
       }
     }
   }
-  
+
   .button[data-theme='primary'] {
     background-color: var(--color-black);
     color: var(--color-white);
     border-radius: 40px;
     font-family: 'BRSonoma-Regular', sans-serif;
+    width: 100%;
     height: 56px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 0.4000000059604645px;
+    letter-spacing: 0.4px;
     text-align: center;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 40px;
+    gap: 8px;
     &:hover {
       box-shadow: 0 0 15px var(--color-black), inset 0 0 10px rgb(189 189 255 / 60%);
     }

@@ -1,9 +1,6 @@
 .banner {
     display: grid;
     grid-template-columns: 55% 45%;
-    margin-left: 1em;
-    margin-right: 1em;
-    gap: 1rem;
     &__text-container {
         margin: auto;
     }

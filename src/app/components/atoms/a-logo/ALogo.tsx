@@ -17,7 +17,7 @@ className
         <img 
         src={url} 
         alt={alt}
-        className={`${styles.logo} ${className ?? ''}`} />
+        className={`${styles.logo} ${styles[className ?? '']}`} />
     );
 };
 

@@ -14,7 +14,7 @@ showLine
     console.log(showLine);
     return (
         <div>
-        <hr className={`${styles.hr} ${ !showLine ? styles['hidden'] : ''}`} />
+        <hr className={`${ !showLine ? styles['hidden'] : ''}`} />
         <p className={`${styles.paragraph} ${styles[className ?? '']}`}>
           {description}  
         </p>

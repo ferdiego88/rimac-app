@@ -47,13 +47,26 @@
   --color-home-singrupo: #DD52DD;
   --color-state-edit: #DFDFFF;
 }
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  all: initial;
+  display: block;
+  margin: 0.5em 0; /* Márgenes superior e inferior de 0.5em */
+  border-top: 1px solid #CCD1EE;
+}
 
 body {
   color: var(--color-text);
   font-size: 13px;
   font-family: 'BRSonoma-Regular', sans-serif;
-  background: var(--color-white);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
+  margin: 0;
+  padding: 0;
 }

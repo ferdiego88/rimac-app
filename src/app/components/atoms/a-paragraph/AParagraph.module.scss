@@ -1,15 +1,13 @@
 .paragraph {
-    margin: 0.3em;
-    font-size: 14px;
+    font-size: 3.9vw;
     font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0.20000000298023224px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-align: left;
 }
 
-.hr {
+.paragraph hr {
     width: 100%;
     color: rgba(204, 209, 238, 1);
-    height: 0px;
     border: 0.01px solid #CCD1EE;
-}
+  }
