@@ -1,0 +1,18 @@
+
+.select {
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    border-right: 1px solid #5E6488;
+    border-radius: 8px 0px 0px 8px;
+    transition: border-color 0.3s;
+    outline: none;
+    &:focus {
+        border-color: #007BFF;
+    }
+  }
+
+
+  
+
+  

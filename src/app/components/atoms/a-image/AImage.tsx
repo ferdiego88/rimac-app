@@ -1,5 +1,4 @@
 'use client'
-import { forwardRef, Ref, memo } from 'react';
 import styles from './AImage.module.scss';
 
 interface IImage {
