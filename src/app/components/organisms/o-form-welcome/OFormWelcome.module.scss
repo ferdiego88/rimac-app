@@ -17,4 +17,8 @@
     @include respond-to(1200px) {
         align-self: flex-start;
       }
+
+    @include respond-to(1800px) {
+      margin-bottom: 0em;
+      }
 }

@@ -85,5 +85,11 @@
             justify-self: flex-end;
             padding: 3rem;
         }
+
+        @include respond-to(1800px) {
+            justify-self: flex-end;
+            align-self: flex-start;
+            padding: 3rem;
+        }
     }
 }

@@ -1,12 +1,16 @@
 @import '../../../styles/mixins.scss';
 .banner-text {
      
+    align-self: self-start;
     @include respond-to(992px) {
         align-self: flex-end;
       }
 
       
     &__container {
-        margin-top: 10rem;
+        
+        @include respond-to(400px) {
+            margin-top: 2rem;
+        }
     }
 }

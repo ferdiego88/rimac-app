@@ -31,10 +31,10 @@
 
   @include respond-to(1800px) {
     grid-template-rows: 20% 5% 75%;
-    padding-left: 18rem;
-    padding-right: 18rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     column-gap: 10rem;
   }
 
@@ -57,12 +57,21 @@
 
       &-desktop {
         display: none;
-        @include respond-to(1200px) {
+        @include respond-to(800px) {
           display: block;
           bottom: 0;
           vertical-align: middle;
+          width: 25vh;
+          height: 100vh;
+        }
+
+        @include respond-to(1200px) {
           width: 90vh;
           height: 97vh;
+        }
+
+        @include respond-to(1800px) {
+          height: 90vh;
         }
       }
     }
@@ -84,10 +93,19 @@
 
       &-desktop {
         display: none;
+        @include respond-to(800px) {
+          display: block;
+          width: 25vh;
+          height: 100vh;
+        }
         @include respond-to(1200px) {
           display: block;
           width: 90vh;
           height: 97vh;
+        }
+
+        @include respond-to(1800px) {
+          height: 90vh;
         }
       }
     }
