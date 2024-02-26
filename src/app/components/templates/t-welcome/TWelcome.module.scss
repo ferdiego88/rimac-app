@@ -24,7 +24,7 @@
     }
     
     @include respond-to(768px) {
-        margin: 5em;
+        margin: 2em;
 
         &__image-blur-left {
             top: 25em;        }

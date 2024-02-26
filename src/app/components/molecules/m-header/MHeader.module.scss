@@ -1,15 +1,20 @@
+@import '../../../styles/mixins.scss';
+
 .header {
  display: grid;
  grid-template-columns: 50% 50%;
  margin-left: 1em;
  margin-top: 0.5em;
-    &__logo {
-    
-    }
+
 
   &__phone-container {
     grid-template-columns: 20% 80%;
     justify-items: center;
     align-content: center;
+
+    @include respond-to(768px) {
+      grid-template-columns: 10% 50%;
+      }
+    
   }  
 }

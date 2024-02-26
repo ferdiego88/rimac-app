@@ -8,7 +8,7 @@
     cursor: pointer;
 
     
-    @include respond-to(768px) {
+    @include respond-to(500px) {
       grid-template-columns: 5% 95%;
     }
 

@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+
 .text {
     font-weight: 700;
 
@@ -9,6 +11,10 @@
     text-align: left;
     font-weight: 700;
 
+    @include respond-to(768px) {
+            font-size: 20px;
+        }
+      
     }
 
     &__banner {
