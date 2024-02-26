@@ -16,6 +16,11 @@ color: #fff;
     justify-content: center;
   }
 
+@include respond-to(1200px) {
+   height: 100px;
+   padding-bottom: 0;
+  }
+
     &__hr {
     width: 90%;
     height: 0px;

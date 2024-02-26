@@ -19,7 +19,7 @@ className,
             </div>
             <div className={`${styles.header} ${styles['header__phone-container']}`}>
             <AText description={messageBuy} className={'text__header__message-buy'}></AText>
-            <ALogo url='/assets/icons/phone.svg' alt='Rimac'/>
+            <ALogo url='/assets/icons/phone.svg' alt='Rimac' className={'logo__phone'}/>
             <AText description={textHeaderDescription} className={'text__header'}></AText>
             </div>
 

@@ -13,4 +13,8 @@
         grid-column: 2/3;
         grid-row: 3/3;
       }
+
+    @include respond-to(1200px) {
+        align-self: flex-start;
+      }
 }

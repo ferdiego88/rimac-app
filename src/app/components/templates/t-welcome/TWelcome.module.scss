@@ -20,8 +20,23 @@
     @include respond-to(1200px) {
         justify-content: start;
         align-content: start;
-        gap: 3rem;
         column-gap: 5rem;
+        row-gap: 1em;
+      }
+
+    @include respond-to(1600px) {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        column-gap: 7rem;
+      }
+
+    @include respond-to(1800px) {
+        grid-template-rows: 20% 5% 75%;
+        padding-left: 18rem;
+        padding-right: 18rem;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        column-gap: 10rem;
       }
 
     &__image-blur-left {

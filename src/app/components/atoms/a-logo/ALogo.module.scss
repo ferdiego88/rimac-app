@@ -13,4 +13,11 @@
             padding: 3rem;
           }
     }
+
+    &__phone {
+
+        @include respond-to(1200px) {
+            width: 2rem;
+          }
+    }
 }
