@@ -1,9 +1,28 @@
 @import '../../../styles/mixins.scss';
 .welcome {
     display: grid;
+    grid-template-columns: 55% 45%;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
     row-gap: 1.5em;
     position: relative;
     margin: 1.5em;
+
+    @include respond-to(992px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 5% 75%;
+        column-gap: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      
+    @include respond-to(1200px) {
+        justify-content: start;
+        align-content: start;
+        gap: 3rem;
+        column-gap: 5rem;
+      }
 
     &__image-blur-left {
         position: absolute;

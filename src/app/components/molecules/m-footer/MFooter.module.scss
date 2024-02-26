@@ -1,3 +1,4 @@
+@import '../../../styles/mixins.scss';
 .footer {
 display: grid;
 grid-template-rows: 40% 20% 40%;
@@ -8,11 +9,22 @@ padding-bottom: 15em;
 background: #03050F;
 color: #fff;
 
+@include respond-to(992px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 40vh;
+    justify-content: center;
+  }
+
     &__hr {
     width: 90%;
     height: 0px;
     margin: auto;
     border-top: 0.1px solid #2B304E;
+
+    @include respond-to(992px) {
+        display: none;
+      }
     }
 
     &__text {

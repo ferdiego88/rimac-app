@@ -5,6 +5,7 @@ import OFormWelcome from '../../organisms/o-form-welcome/OFormWelcome';
 import AParagraph from '../../atoms/a-paragraph/AParagraph';
 import styles from './TWelcome.module.scss';
 import MFooter from '../../molecules/m-footer/MFooter';
+import MBannerText from '../../molecules/m-banner-text/MBanner-Text';
 
 interface Welcome {
 
@@ -25,10 +26,11 @@ const Welcome = ( {
 
         <MHeader></MHeader>
         <main className={styles.welcome}>
+        <MBannerText className={'banner-text__container'} title={'Seguro Salud Flexible'} subtitle={'Creado para ti y tu familia'}></MBannerText>
         <MBanner></MBanner>
         <AParagraph 
         description='Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra asesoría, 100% online.'
-        showLine={true}/>
+        showLine={true} className={'paragraph'}/>
         <OFormWelcome></OFormWelcome>
        </main>
         <MFooter text='© 2023 RIMAC Seguros y Reaseguros.'></MFooter>

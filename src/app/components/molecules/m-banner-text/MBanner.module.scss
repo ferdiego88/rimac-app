@@ -1,0 +1,12 @@
+@import '../../../styles/mixins.scss';
+.banner-text {
+     
+    @include respond-to(992px) {
+        align-self: flex-end;
+      }
+
+      
+    &__container {
+        
+    }
+}

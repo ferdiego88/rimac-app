@@ -13,9 +13,9 @@ showLine
 }: IAParagraph) => {
     console.log(showLine);
     return (
-        <div>
-        <hr className={`${ !showLine ? styles['hidden'] : ''}`} />
-        <p className={`${styles.paragraph} ${styles[className ?? '']}`}>
+        <div className={`${styles.paragraph}`}>
+        <hr className={`${styles['paragraph__hr']} ${styles[className ?? '']}`} />
+        <p className={`${styles['paragraph__text']} ${styles[className ?? '']}`}>
           {description}  
         </p>
         </div>

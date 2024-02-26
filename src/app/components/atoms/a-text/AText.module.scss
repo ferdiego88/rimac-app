@@ -44,6 +44,12 @@
         background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
         padding: 4px;
         border-radius: 5px;
+            
+            @include respond-to(992px) {
+                font-size: 1.2vw;
+                justify-self: flex-start;
+            }
+
         }
 
         &-principal {
@@ -51,6 +57,12 @@
         text-align: left;
         margin: 0;
         margin-top: 10px;
+
+            @include respond-to(992px) {
+                font-size: 2.5vw;
+                justify-self: flex-start;
+                align-self: center;
+            }
         }
 
     }
@@ -68,5 +80,10 @@
         font-size: 12px;
         line-height: 20px;
         letter-spacing: 0.1px;
+
+        @include respond-to(992px) {
+            justify-self: flex-end;
+            padding: 3rem;
+        }
     }
 }

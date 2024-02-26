@@ -1,8 +1,16 @@
+@import '../../../styles/mixins.scss';
 .logo {
     display: inline;
     margin: auto;
 
     &__footer {
         align-self: self-end;
+
+        @include respond-to(992px) {
+            margin: 0;
+            justify-self: self-start;
+            align-self: self-start;
+            padding: 3rem;
+          }
     }
 }
