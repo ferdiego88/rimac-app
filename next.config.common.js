@@ -3,6 +3,7 @@
 const withFonts = require('next-fonts');
 
 const nextConfig = {
+  ouput: 'export',
   webpack(config, options) {
     config.module.rules.push({
       test: /\.(eot|woff|woff2|ttf|otf)$/,
