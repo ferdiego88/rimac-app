@@ -3,9 +3,6 @@
 const withFonts = require('next-fonts');
 
 const nextConfig = {
-  output: 'export',
-  // Otras configuraciones específicas de Next.js
-
   webpack(config, options) {
     config.module.rules.push({
       test: /\.(eot|woff|woff2|ttf|otf)$/,
