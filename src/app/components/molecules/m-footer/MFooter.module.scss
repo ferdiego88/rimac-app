@@ -17,7 +17,12 @@ color: #fff;
   }
 
 @include respond-to(1200px) {
-   height: 100px;
+   height: 30vw;
+   padding-bottom: 1.3em;
+  }
+  
+@include respond-to(1600px) {
+   height: 15vw;
    padding-bottom: 1.3em;
   }
 
