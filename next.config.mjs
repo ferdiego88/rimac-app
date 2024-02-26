@@ -1,24 +1,9 @@
-// next.config.mjs
+/**
+ * @type {import('next').NextConfig}
+ */
 
-import withFonts from 'next-fonts';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
-const nextConfig = {
-  // Otras configuraciones específicas de Next.js
-
-  webpack(config, options) {
-    config.module.rules.push({
-      test: /\.(eot|woff|woff2|ttf|otf)$/,
-      use: {
-        loader: 'url-loader',
-        options: {
-          limit: 8192,
-          name: 'fonts/[name].[ext]',
-        },
-      },
-    });
-
-    return config;
-  },
-};
-
-export default withFonts(nextConfig);
+const withFonts = require('./next.config.common.js');
+export default withFonts;
