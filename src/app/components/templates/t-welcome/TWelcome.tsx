@@ -18,11 +18,19 @@ const Welcome = ( {
         <>
         <img src={'assets/images/blur-asset-left-mobile.png'} 
         alt='blur-left-mobile'
-        className={styles['welcome__image-blur-left']} />
+        className={`${styles['welcome__blur-left']} ${styles['welcome__blur-left-mobile']}`} />
 
         <img src={'assets/images/blur-asset-right-mobile.png'} 
         alt='blur-right-mobile'
-        className={styles['welcome__image-blur-right']} />
+        className={`${styles['welcome__blur-right']} ${styles['welcome__blur-right-mobile']}`} />
+
+        <img src={'assets/images/blur-asset-left-desktop.png'} 
+        alt='blur-left-mobile'
+        className={`${styles['welcome__blur-left']} ${styles['welcome__blur-left-desktop']}`} />
+
+        <img src={'assets/images/blur-asset-right-desktop.png'} 
+        alt='blur-right-mobile'
+        className={`${styles['welcome__blur-right']} ${styles['welcome__blur-right-desktop']}`} />
 
         <MHeader></MHeader>
         <main className={styles.welcome}>

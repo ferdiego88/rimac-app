@@ -1,68 +1,103 @@
-@import '../../../styles/mixins.scss';
+@import "../../../styles/mixins.scss";
 .welcome {
-    display: grid;
-    grid-template-columns: 55% 45%;
-    column-gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1.5em;
-    position: relative;
-    margin: 1.5em;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  column-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5em;
+  position: relative;
+  margin: 1.5em;
 
-    @include respond-to(992px) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 20% 5% 75%;
-        column-gap: 4rem;
-        padding-bottom: 4rem;
+  @include respond-to(992px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 5% 75%;
+    column-gap: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @include respond-to(1200px) {
+    justify-content: start;
+    align-content: start;
+    column-gap: 5rem;
+    row-gap: 1em;
+  }
+
+  @include respond-to(1600px) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    column-gap: 7rem;
+  }
+
+  @include respond-to(1800px) {
+    grid-template-rows: 20% 5% 75%;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    column-gap: 10rem;
+  }
+
+  &__blur {
+
+    &-left {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+      &-mobile {
+
+        @include respond-to(1200px) {
+          display: none;
+        }
       }
 
-      
-    @include respond-to(1200px) {
-        justify-content: start;
-        align-content: start;
-        column-gap: 5rem;
-        row-gap: 1em;
+      &-desktop {
+        display: none;
+        @include respond-to(1200px) {
+          display: block;
+          bottom: 0;
+          vertical-align: middle;
+          width: 90vh;
+          height: 90vh;
+        }
+      }
+    }
+
+    &-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+
+      &-mobile {
+        
+        @include respond-to(1200px) {
+          display: none;
+        }
       }
 
-    @include respond-to(1600px) {
-        padding-left: 8rem;
-        padding-right: 8rem;
-        column-gap: 7rem;
+      &-desktop {
+        display: none;
+        @include respond-to(1200px) {
+          display: block;
+          width: 90vh;
+          height: 90vh;
+        }
       }
+    }
+  }
 
-    @include respond-to(1800px) {
-        grid-template-rows: 20% 5% 75%;
-        padding-left: 18rem;
-        padding-right: 18rem;
-        padding-top: 2rem;
-        padding-bottom: 5rem;
-        column-gap: 10rem;
-      }
+  @include respond-to(768px) {
+    margin: 2em;
 
     &__image-blur-left {
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+      top: 25em;
     }
-
-    &__image-blur-right {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: auto;
-        z-index: -1;
-    }
-    
-    @include respond-to(768px) {
-        margin: 2em;
-
-        &__image-blur-left {
-            top: 25em;        }
-      }
-    
+  }
 }
-
