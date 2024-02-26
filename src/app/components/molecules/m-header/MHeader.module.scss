@@ -6,15 +6,21 @@
  margin-left: 1em;
  margin-top: 0.5em;
 
-
   &__phone-container {
     grid-template-columns: 20% 80%;
     justify-items: center;
     align-content: center;
+    align-items: center;
 
     @include respond-to(768px) {
-      grid-template-columns: 10% 50%;
+      grid-template-columns: 10% 40%;
       }
+
+    @include respond-to(992px) {
+        grid-template-columns: 45% 10% 45%;
+        align-items: center;
+
+     }
     
-  }  
+  }
 }

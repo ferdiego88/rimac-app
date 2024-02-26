@@ -10,13 +10,15 @@ const MHeader = ( {
 className,
 }:MHeader ) => {
  
-    const textHeaderDescription = '(01) 411 6001'
+    const textHeaderDescription = '(01) 411 6001';
+    const messageBuy = '¡Compra por este medio!';
     return (
        <header className={`${styles.header} ${className ?? ''}`}>
             <div className={`${styles['header__logo']}`}>
             <ALogo url='/assets/icons/logo.svg' alt='Rimac'/>
             </div>
             <div className={`${styles.header} ${styles['header__phone-container']}`}>
+            <AText description={messageBuy} className={'text__header__message-buy'}></AText>
             <ALogo url='/assets/icons/phone.svg' alt='Rimac'/>
             <AText description={textHeaderDescription} className={'text__header'}></AText>
             </div>
